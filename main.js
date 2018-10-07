@@ -1,19 +1,19 @@
 'use strict'
 
-  const main = ()=> {
-  
+const main = () => {
+
   // list of projects selectors
   const copyWork = document.querySelector('#copy-selector');
   const productWork = document.querySelector('#product-selector');
   const webDevWork = document.querySelector('#webdev-selector');
 
   // list of projects
-  const copyProjects= document.querySelectorAll('.copy-work');
-  const productProjects= document.querySelectorAll('.product-work');
+  const copyProjects = document.querySelectorAll('.copy-work');
+  const productProjects = document.querySelectorAll('.product-work');
   const webDevProjects = document.querySelectorAll('.webdev-work');
 
   // list of event listeners handlers
-  const handleCopyClick = () => copyProjects.forEach((project)=>{
+  const handleCopyClick = () => copyProjects.forEach((project) => {
     project.classList.toggle('hidden')
   });
 
@@ -22,13 +22,13 @@
   });
 
   const handleWebDevClick = () => webDevProjects.forEach((project) => {
-  project.classList.toggle('hidden')
-});
+    project.classList.toggle('hidden')
+  });
 
   // projects event listeners
   copyWork.addEventListener('click', handleCopyClick)
-  productWork.addEventListener('click', handleProductClick )
-  webDevWork.addEventListener('click', handleWebDevClick )
+  productWork.addEventListener('click', handleProductClick)
+  webDevWork.addEventListener('click', handleWebDevClick)
 
 }
 
