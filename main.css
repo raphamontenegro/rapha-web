@@ -147,7 +147,7 @@ main {
   width: 100vw;
   display: grid;
   grid-template-rows: 5vh auto;
-  background: #447187;
+  background: #1B4E68;
   grid-area: contact;
   height: 95vh;
   width: 100vw;
